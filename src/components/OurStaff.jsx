@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap'
-import staff from '../images/staff.webp'
+import staff from '../images/staff.jpg'
 const OurStaff = () => {
     return (
             <div style={{backgroundColor:"maroon"}}>
