@@ -14,7 +14,7 @@ const Specials = (props) => {
     return (
         <div>
             <Container>
-                    <Row style={{ margin: "35% auto" }}>
+                    <Row style={{ margin: "180px auto" }}>
                         <Col className="col-8" >
                             <Card bg="secondary">
                                 <Card.Title>SteakTip Dinner</Card.Title>
