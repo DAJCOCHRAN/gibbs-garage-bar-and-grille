@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap'
-import gibbsMaps from '../images/gibbsMaps.JPG'
+import gibbsMaps from '../images/gibbsMaps.jpg'
 const Directions = () => {
     
     return (
