@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap'
-import gibbsMaps from '../images/gibbsMaps.PNG'
+import gibbsMaps from '../images/gibbsMaps.JPG'
 const Directions = () => {
     
     return (
         <div style={{backgroundColor:"maroon"}}>
             <Container>
                     <Row>
-                        <Col className="col-7" style={{ margin: "180px auto", opacity: "0.89" }}>
+                        <Col className="col-12" style={{ margin: "180px auto", opacity: "0.89" }}>
                             <Card bg="secondary">
                                 <Card.Img variant= "top" src={gibbsMaps}/>
                                 <Card.Title>Google Maps API</Card.Title>
