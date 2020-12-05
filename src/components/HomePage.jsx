@@ -10,6 +10,11 @@ const HomePage = () => {
                     <Row style={{width:"100%"}}>
                         
                     </Row>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <Row>
                         <Col className="col-7" style={{ margin: "180px auto", opacity: "0.89" }}>
                             <Card bg="secondary">
