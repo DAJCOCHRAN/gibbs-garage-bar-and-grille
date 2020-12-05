@@ -1,29 +1,37 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import menuOne from '../images/menuOne.jpg'
-import menuTwo from '../images/menuTwo.jpg'
-import drinkMenuOne from '../images/drinkMenuOne.jpg'
-import drinkMenuTwo from '../images/drinkMenuTwo.jpg'
+import menuOne from '../images/physicalMenus/menuOne.jpg'
+import menuTwo from '../images/physicalMenus/menuTwo.jpg'
+import drinkMenuOne from '../images/physicalMenus/drinkMenuOne.jpg'
+import drinkMenuTwo from '../images/physicalMenus/drinkMenuTwo.jpg'
 const MenuPDF = () => {
     return (
-        <div style={{margin:"100px auto", backgroundColor:"maroon"}}>
-            <Container>
+        <div style={{ backgroundColor: "maroon" }}>
                 <Row>
-                    <Col>
-                        <Image src={menuOne} />
+                    <Col className='col-3'></Col>
+                    <Col className='col-6' >
+                    <Image src={menuOne} style={{margin:'0 auto', display:'block', width:'100%', height:'100%'}}/>
                     </Col>
-                    <Col>
-                        <Image src={menuTwo} />
-                    </Col>
-                    <Col>
-                        <Image src={drinkMenuOne} />
-                    </Col>
-                    <Col>
-                        <Image src={drinkMenuTwo} />
-                    </Col>
+                    <Col className='col-3'></Col>
                 </Row>
-            </Container>
-        </div>
+                <Row>
+                    <Col className='col-3'></Col>
+                    <Col className='col-6'>
+                    <Image src={menuTwo} style={{margin:'0 auto', display:'block',  width:'100%', height:'100%'}} />
+                    </Col>
+                    <Col className='col-3'></Col>
+                </Row>
+                <Row>
+                    <Col className='col-2'></Col>
+                    <Col className='col-4'>
+                    <Image src={drinkMenuOne} style={{margin:'0 auto', display:'block', width:'100%', height:'100%'}} />
+                    </Col>
+                    <Col className='col-4'>
+                    <Image src={drinkMenuTwo} style={{margin:'0 auto', display:'block',  width:'100%', height:'100%'}} />
+                    </Col>
+                    <Col className='col-2'></Col>
+                </Row>
+        </div >
     );
 }
 

@@ -1,10 +1,20 @@
 import React from 'react';
 import { Card, Container, Row, Col } from 'react-bootstrap'
+import NavigationSecondaryBar from './NavigationSecondaryBar';
 const HomePage = () => {
     return (
         <>
             <div className="homePage">
+            
                 <Container>
+                    <Row style={{width:"100%"}}>
+                        
+                    </Row>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <Row>
                         <Col className="col-7" style={{ margin: "180px auto", opacity: "0.89" }}>
                             <Card bg="secondary">
