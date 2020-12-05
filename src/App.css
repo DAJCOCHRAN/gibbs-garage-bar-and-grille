@@ -1,15 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.icons{
-  color:white;
-  margin: 0 10px;
-  cursor: pointer;
-}
 
 .navItems{
-  color: yellow;
   font-size: 35px;
   margin: auto 10px;
 }
@@ -21,10 +11,13 @@
 
 .homePage{
   background: url(images/frontShop.jpg) no-repeat fixed center ; 
-  background-color: maroon;
   background-size: 100% 100%;
 }
 
-
+.menuBackground{
+  height:100%;
+  background: url(images/themes/asphalt3.jpg) no-repeat fixed center ; 
+  background-size: 100% 100%;
+}
 
 
