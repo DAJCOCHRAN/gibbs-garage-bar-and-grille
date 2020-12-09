@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavigationBar from './components/NavigationBar'
@@ -10,6 +11,7 @@ import Burgers from './components/menuItems/Burgers'
 import Sides from './components/menuItems/Sides'
 import Desserts from './components/menuItems/Desserts'
 import Specials from './components/menuItems/Specials'
+import Entrees from './components/menuItems/Entrees'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import NavigationSecondaryBar from './components/NavigationSecondaryBar';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -35,6 +37,9 @@ function App() {
           </Route>
           <Route path="/sides">
             <Sides />
+          </Route>
+          <Route path="/entrees">
+            <Entrees />
           </Route>
           <Route path="/specials">
             <Specials />

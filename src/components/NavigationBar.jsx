@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import MediaQuery  from 'react-responsive';
 import logo from '../images/logo.jpg'
 import { Nav, Navbar, NavDropdown, Image, Button, Badge, Container, Row, Col } from 'react-bootstrap'
 import { BsList, BsArrowDown } from 'react-icons/bs'
@@ -12,6 +13,7 @@ const NavigationBar = () => {
   const [deliveryColor, setDeliveryColor] = useState(baseNavItemColor)
   const [ourStaffColor, setOurStaffColor] = useState(baseNavItemColor)
   const [menuColor, setMenuColor] = useState(baseNavItemColor)
+  
   useEffect(() => {
 
   }, [])
@@ -24,19 +26,24 @@ const NavigationBar = () => {
               <Navbar.Brand>
                 <Button style={logoColor} onMouseEnter={() => { setLogoColor(hoverNavItemColor); }}
                   onMouseLeave={() => { setLogoColor(baseNavItemColor); }}>
-                  <span className="navItems">
-                    <Image src={logo} roundedCircle width="80px" />
-                Gibbs Garage Bar and Grille
-              </span>
+                    <span className="navItems">
+                    <Image src={logo} roundedCircle width="80px" /> 
+                    <MediaQuery minWidth={1430}>
+                    Gibbs Garage Bar and Grille
+                    </MediaQuery>
+                      
+                      
+                    
+                    </span>
                 </Button>
               </Navbar.Brand>
             </Link>
             </Col>
-            <Col className='col-8'>
+            
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span><BsList className="navItems" style={{ color: 'yellow' }} /></span>
           </Navbar.Toggle>
-             
+          <Col className='col-8'>
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className='m-auto'>
                 <NavDropdown
@@ -52,6 +59,7 @@ const NavigationBar = () => {
                     </Button>}> {/*can you have dropdowns in Dropdowns??? */}
                   <NavDropdown.Header className="m-auto">Virtual</NavDropdown.Header>
                   <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/specials">Specials</Link></NavDropdown.Item>
+                  <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/entrees">Main Entrees</Link></NavDropdown.Item>
                   <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/burgers">Burgers/Sandwiches</Link></NavDropdown.Item>
                   <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/sides">Sides</Link></NavDropdown.Item>
                   <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/desserts">Desserts</Link></NavDropdown.Item> {/*Dont know why navItemsDropdown textAlign center doesnt work */}
@@ -77,7 +85,7 @@ const NavigationBar = () => {
                 <Link to="/ourStaff">
                   <Button style={ourStaffColor} onMouseEnter={() => { setOurStaffColor(hoverNavItemColor); }}
                     onMouseLeave={() => { setOurStaffColor(baseNavItemColor); }}>
-                    {<span className="navItems"> Our Staff </span>}
+                    {<span className="navItems" style={{whiteSpace:"nowrap"}}> Our Staff </span>}
                   </Button>
                 </Link>
               </Nav>
