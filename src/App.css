@@ -20,4 +20,10 @@
   background-size: 100% 100%;
 }
 
+.mobileCardMenuItem{
+  background-color: "red";
+  width: '100%';
+  height: '100%';
+}
+
 

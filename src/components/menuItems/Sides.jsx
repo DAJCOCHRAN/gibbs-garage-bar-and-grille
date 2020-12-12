@@ -1,16 +1,7 @@
 import React from 'react';
-import { Card, CardImg, Button, Container, Row, Col } from 'react-bootstrap'
-import chili from '../../images/menu/sides/chili.jpg'
+import { Card, Row, Col } from 'react-bootstrap'
+
 const Sides = (props) => {
-    const {order, setOrder} = props;
-    let { stateSwitch, setStateSwitch } = props;
-    const chiliObj = {title:"chili", cost:"$$.$$"}
-    const addOrder = (menuObj) => {
-        order.splice(0,0, menuObj)
-        console.log("orderList from burger component", order)
-        setStateSwitch(!stateSwitch);
-        return order
-    }
     return (
         <div className='menuBackground'>
             <Row>
@@ -25,14 +16,14 @@ const Sides = (props) => {
                     <Col className='col-5' style={{display: 'flex', flexDirection: 'row', marginLeft:"5%"}}>
                         <Card bg="" style={{marginLeft:"10%", backgroundColor:"whitesmoke"}}>
                             <Card.Title>Taco Burger</Card.Title>
-                            <CardImg src={chili}/>
+                            {/* <CardImg src={chili}/> */}
                             <Card.Body>
                                 <p>Taco seasoned burger topped with pepperjack, avocado, cilantro, lime, sourcream, with a side of house waffle fries</p>
                             </Card.Body>
                         </Card>
                         <Card bg="red" style={{marginLeft:"5%"}}>
                             <Card.Title>Taco Burger</Card.Title>
-                            <CardImg src={chili} />
+                            {/* <CardImg src={chili} /> */}
                             <Card.Body>
                                 <p>Taco seasoned burger topped with pepperjack, avocado, cilantro, lime, sourcream, with a side of house waffle fries</p>
                             </Card.Body>
@@ -41,14 +32,14 @@ const Sides = (props) => {
                     <Col className='col-5' style={{display: 'flex', flexDirection: 'row', marginLeft:"2.8%"}}>
                         <Card bg="red" style={{marginLeft:"10%"}}>
                             <Card.Title>Taco Burger</Card.Title>
-                            <CardImg src={chili} />
+                            {/* <CardImg src={chili} /> */}
                             <Card.Body>
                                 <p>Taco seasoned burger topped with pepperjack, avocado, cilantro, lime, sourcream, with a side of house waffle fries</p>
                             </Card.Body>
                         </Card>
                         <Card bg="red" style={{marginLeft:"5%"}}>
                             <Card.Title>Taco Burger</Card.Title>
-                            <CardImg src={chili} />
+                            {/* <CardImg src={chili} /> */}
                             <Card.Body>
                                 <p>Taco seasoned burger topped with pepperjack, avocado, cilantro, lime, sourcream, with a side of house waffle fries</p>
                             </Card.Body>
@@ -59,14 +50,14 @@ const Sides = (props) => {
                     <Col className='col-5' style={{display: 'flex', flexDirection: 'row', marginLeft:"5%"}}>
                         <Card bg="" style={{marginLeft:"10%", backgroundColor:"white"}}>
                             <Card.Title>Taco Burger</Card.Title>
-                            <CardImg src={chili} />
+                            {/* <CardImg src={chili} /> */}
                             <Card.Body>
                                 <p>Taco seasoned burger topped with pepperjack, avocado, cilantro, lime, sourcream, with a side of house waffle fries</p>
                             </Card.Body>
                         </Card>
                         <Card bg="red" style={{marginLeft:"5%"}}>
                             <Card.Title>Taco Burger</Card.Title>
-                            <CardImg src={chili} />
+                            {/* <CardImg src={chili} /> */}
                             <Card.Body>
                                 <p>Taco seasoned burger topped with pepperjack, avocado, cilantro, lime, sourcream, with a side of house waffle fries</p>
                             </Card.Body>
@@ -75,14 +66,14 @@ const Sides = (props) => {
                     <Col className='col-5' style={{display: 'flex', flexDirection: 'row', marginLeft:"2.8%"}}>
                         <Card bg="red" style={{marginLeft:"10%"}}>
                             <Card.Title>Taco Burger</Card.Title>
-                            <CardImg src={chili} />
+                            {/* <CardImg src={chili} /> */}
                             <Card.Body>
                                 <p>Taco seasoned burger topped with pepperjack, avocado, cilantro, lime, sourcream, with a side of house waffle fries</p>
                             </Card.Body>
                         </Card>
                         <Card bg="red" style={{marginLeft:"5%"}}>
                             <Card.Title>Taco Burger</Card.Title>
-                            <CardImg src={chili} />
+                            {/* <CardImg src={chili} /> */}
                             <Card.Body>
                                 <p>Taco seasoned burger topped with pepperjack, avocado, cilantro, lime, sourcream, with a side of house waffle fries</p>
                             </Card.Body>
