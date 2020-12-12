@@ -3,8 +3,7 @@ import { Card, Row, Col, CardImg } from 'react-bootstrap'
 import chickenParmDinner from '../../images/menu/entrees/chickenParmDinner.jpg'
 import steakTip from '../../images/menu/entrees/steakTip.jpg'
 import fishChips from '../../images/menu/entrees/fishChips.jpg'
-import halfRackDinner from '../../images/menu/entrees/halfRackDinner.jpg'
-import phillyMac from '../../images/menu/entrees/phillyMac.jpg'
+
 const Entrees = () => {
     // const {order, setOrder} = props;
     // let { stateSwitch, setStateSwitch } = props;
@@ -18,12 +17,14 @@ const Entrees = () => {
     return (
         <div className='menuBackground'>
             <Row>
-                <Col className='col-5' />
-                
-                <Col className='col-2 border border-warning rounded-pill' style={{textAlign:"center", backgroundColor:"black", margin:"2% 0", color:"yellow", border: '5px solid yelow' }}>
+                <Col className='col-4' />
+                <Col className='col-4'>
+                <div className='border border-warning rounded-pill' style={{textAlign:"center", backgroundColor:"black", margin:"4% 0", color:"yellow", border: '5px solid yelow', padding:'2px 50px'}}>
                     <h1>Main Entrees</h1>
+                </div>
                 </Col>
-                <Col className='col-5'/>
+                
+                <Col className='col-4'/>
             </Row>
                 <Row style={{marginBottom:"5%"}}>
                     <Col className='col-5' style={{display: 'flex', flexDirection: 'row', marginLeft:"5%"}}>
@@ -32,7 +33,6 @@ const Entrees = () => {
                             <CardImg src={steakTip}/>
                             <Card.Body>
                                 <p>Marinated steak tips served with mashed potatoes & broccoli</p>
-                                <p>20</p>
                             </Card.Body>
                         </Card>
                         <Card bg="red" style={{marginLeft:"5%", backgroundColor:"whitesmoke", width:'100%', height:'100%'}}>
@@ -40,7 +40,7 @@ const Entrees = () => {
                             <CardImg src={chickenParmDinner} />
                             <Card.Body>
                                 <p>Lightly breaded chicken served over linguini with house marinara</p>
-                                <p>16</p>
+                                
                             </Card.Body>
                         </Card>
                     </Col>
@@ -50,7 +50,7 @@ const Entrees = () => {
                             {/* <CardImg src={steakTip} /> */}
                             <Card.Body>
                                 <p>Chef Jon's classic recipie served with mashed potatoes & broccoli</p>
-                                <p>16</p>
+                                
                             </Card.Body>
                         </Card>
                         <Card bg="red" style={{marginLeft:"5%", backgroundColor:"whitesmoke", width:'100%', height:'100%'}}>
@@ -58,7 +58,7 @@ const Entrees = () => {
                             {/* <CardImg src={steakTip} /> */}
                             <Card.Body>
                                 <p>St. Louis style ribs brined overnight & slow-cooked, served with house coleslaw and fries</p>
-                                <p>17</p>
+
                             </Card.Body>
                         </Card>
                     </Col>
@@ -70,7 +70,7 @@ const Entrees = () => {
                             <CardImg src={fishChips} />
                             <Card.Body>
                                 <p>Haddock filets coated in narangansett beer batter, served with garage fries, coleslaw and tartar sauce</p>
-                                <p>17</p>
+                                
                             </Card.Body>
                         </Card>
                         <Card bg="red" style={{marginLeft:"5%", backgroundColor:"white", width:'100%', height:'100%'}}>
@@ -78,7 +78,7 @@ const Entrees = () => {
                             {/* <CardImg src={steakTip} /> */}
                             <Card.Body>
                                 <p>Generous portion of hand-battered chicken strips served with garage fries</p>
-                                <p>14</p>
+                                
                             </Card.Body>
                         </Card>
                     </Col>
@@ -100,7 +100,10 @@ const Entrees = () => {
                         </Card> */}
                     </Col>
                 </Row>
+                <br />
+                
         </div>
+        
     );;
 }
 

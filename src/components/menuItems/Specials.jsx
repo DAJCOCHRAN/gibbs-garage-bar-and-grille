@@ -1,15 +1,8 @@
 import React from 'react';
 import { Card, Container, Row, Col, CardImg, Button } from 'react-bootstrap'
+import halfRackDinner from '../../images/menu/specials/halfRackDinner.jpg'
 const Specials = (props) => {
-    // const {order, setOrder} = props;
-    // let { stateSwitch, setStateSwitch } = props;
-    // const steakObj = {title:"Steak Tip Dinner", cost:"$$.$$"}
-    // const addOrder = (menuObj) => {
-    //     order.splice(0,0, menuObj)
-    //     console.log("orderList from burger component", order)
-    //     setStateSwitch(!stateSwitch);
-    //     return order
-    // }
+    
     return (
         <div className='menuBackground'>
             <Row>
@@ -23,10 +16,11 @@ const Specials = (props) => {
                 <Row style={{marginBottom:"5%"}}>
                     <Col className='col-5' style={{display: 'flex', flexDirection: 'row', marginLeft:"5%"}}>
                         <Card bg="" style={{marginLeft:"10%", backgroundColor:"whitesmoke", width:'100%', height:'100%'}}>
-                            <Card.Title>Insert Special Items here, check back soon!!!</Card.Title>
-                            {/* <CardImg src={steakTip}/> */}
+                            <Card.Title>Half Rack Dinner</Card.Title>
+                            <CardImg src={halfRackDinner}/>
                             <Card.Body>
                                 <p></p>
+
                                 <p></p>
                             </Card.Body>
                         </Card>
@@ -95,18 +89,6 @@ const Specials = (props) => {
                         </Card> */}
                     </Col>
                 </Row>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
                 <br />
                 <br />
                 <br />
