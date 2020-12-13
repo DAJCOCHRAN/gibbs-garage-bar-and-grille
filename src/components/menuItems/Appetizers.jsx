@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Card, CardImg } from 'react-bootstrap'
 import MediaQuery from 'react-responsive'
 import { mobileCardMenuItem } from '../../styles'
+
 import BeerCheesePretzels from '../../images/menu/appetizers/BeerCheesePretzels.jpg'
 import frenchOnionDip from '../../images/menu/appetizers/frenchOnionDip.jpg'
 
@@ -11,7 +12,6 @@ const Appetizers = () => {
             <MediaQuery minWidth={960}>
                 <Row>
                     <Col className='col-4' />
-
                     <Col className='col-4'>
                         <div className='border border-warning rounded-pill' style={{ textAlign: "center", backgroundColor: "black", margin: "4% 0", color: "yellow", border: '5px solid yelow', padding: '2px 50px' }}>
                             <h1>Appetizers</h1>
@@ -127,15 +127,16 @@ const Appetizers = () => {
                     </Col>
                 </Row>
                 <br />
-                {/* MOBILE ------------------------------------------------------------------------------------------------------------------*/}
+                
             </MediaQuery>
+            {/* SMALL SCREEN ------------------------------------------------------------------------------------------------------------------*/}
             <MediaQuery maxWidth={960}>
                 <Row>
                     <Col className='col-4' />
 
                     <Col className='col-4'>
                         <div className='border border-warning rounded-pill' style={{ textAlign: "center", backgroundColor: "black", margin: "8% 0", color: "yellow", border: '5px solid yelow', padding: '15px 0px 15px 0px' }}>
-                            <h4>Appetizers</h4>
+                            <span style={{textSize:"0.5em"}}>Appetizers</span>
                         </div>
                     </Col>
                     <Col className='col-4' />
@@ -144,10 +145,10 @@ const Appetizers = () => {
                     <Col className="col-1" />
                     <Col className='col-5' >
                         <Card style={mobileCardMenuItem} >
-                            <Card.Title>Wings</Card.Title>
+                            <Card.Title style={{textAlign:"center"}}>Wings</Card.Title>
                             {/* <CardImg src={tacoBurger} /> */}
-                            <Card.Body>
-                                <p>Grilled to perfection! served with a choice of sauce/dusting</p>
+                            <Card.Body >
+                                <span style={{textSize:"0.25em"}}>Grilled to perfection! served with a choice of sauce / dusting</span>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -156,7 +157,7 @@ const Appetizers = () => {
                             <Card.Title>Tenders</Card.Title>
                             {/* <CardImg src={tacoBurger} /> */}
                             <Card.Body>
-                                <p>Hand battered chicken strips served plain or tossed in your choice of sauce/dusing</p>
+                                <p>Hand battered chicken strips served plain or tossed in your choice of sauce / dusting</p>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -178,12 +179,13 @@ const Appetizers = () => {
                             <Card.Title></Card.Title>
                             {/* <CardImg src={tacoBurger} /> */}
                             <Card.Body>
-                                <h3>Sauces:</h3>
+                                <p style={{fontWeight:600}}>Sauces:</p>
                                 <p>BBQ, buffalo, sweet red chili, mango habenaro, honey mustard</p>
-                                <h3>Dustings:</h3>
+                                <p style={{fontWeight:600}}>Dustings:</p>
                                 <p>Salt & Vinegar, garlic parmesan, cajun</p>
                             </Card.Body>
                         </Card>
+                        
                     </Col>
                     <Col className="col-1" />
                 </Row>

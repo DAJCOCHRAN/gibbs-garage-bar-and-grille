@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom'
 const baseNavItemColor = { borderColor: "black", backgroundColor: "black", color: "yellow", margin: "0 5px" }
 const hoverNavItemColor = { borderColor: "black", backgroundColor: "white", color: "black", margin: "0 5px" }
 const NavigationBar = () => {
+
+  const [toggle, setToggle] = useState({navExpanded: false})
+
   const [logoColor, setLogoColor] = useState(baseNavItemColor)
   const [homeColor, setHomeColor] = useState(baseNavItemColor)
   const [pickUpColor, setPickUpColor] = useState(baseNavItemColor)
@@ -14,6 +17,14 @@ const NavigationBar = () => {
   const [ourStaffColor, setOurStaffColor] = useState(baseNavItemColor)
   const [menuColor, setMenuColor] = useState(baseNavItemColor)
   
+  const openToggle = () =>{
+    setToggle({navExpanded: 'expanded'})
+  }
+
+  const closeToggle = () =>{
+    setToggle({navExpanded: false})
+  }
+
   useEffect(() => {
 
   }, [])
@@ -36,7 +47,7 @@ const NavigationBar = () => {
               </Navbar.Brand>
             </Link>
             </Col>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" expanded={toggle}>
             <span><BsList className="navItems" style={{ color: 'yellow' }} /></span>
           </Navbar.Toggle>
           {/* <Col className='col-8'> */}
@@ -54,8 +65,7 @@ const NavigationBar = () => {
 
                     </Button>}> {/*can you have dropdowns in Dropdowns??? */}
                   <NavDropdown.Header className="m-auto" style={{ textAlign: "center" }}>Virtual</NavDropdown.Header>
-                  <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/specials">Specials</Link></NavDropdown.Item>
-                  <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/appetizers">Appetizers</Link></NavDropdown.Item>
+                  <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }} ><Link to="/appetizers">Appetizers</Link></NavDropdown.Item>
                   <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/entrees">Main Entrees</Link></NavDropdown.Item>
                   <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/burgers/sandwiches">Burgers/Sandwiches</Link></NavDropdown.Item>
                   <NavDropdown.Item className="navItemsDropdown" style={{ textAlign: "center" }}><Link to="/soups/salads">Soups/Salads</Link></NavDropdown.Item>
